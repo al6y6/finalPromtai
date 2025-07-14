@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Prompt Generator 2025 - AI Video Creation Tool</title>
+    <meta name="description" content="Generate professional video prompts with AI-powered suggestions for modern video creation">
+    <meta name="keywords" content="video prompt, AI video, video generator, prompt engineering, video creation">
+    <meta property="og:title" content="Video Prompt Generator 2025">
+    <meta property="og:description" content="Generate professional video prompts with AI-powered suggestions">
+    <meta name="twitter:title" content="Video Prompt Generator 2025">
+    <meta name="twitter:description" content="Generate professional video prompts with AI-powered suggestions">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f1f5f9;
+            --accent: #06b6d4;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base;
+        }
+        
+        .card-glass {
+            @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl;
+        }
+        
+        .input-modern {
+            @apply w-full px-3 py-2 sm:px-4 sm:py-3 bg-white/20 border border-white/30 rounded-lg sm:rounded-xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent backdrop-blur-sm text-sm sm:text-base;
+        }
+    }
+
+    @layer utilities {
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .mobile-scroll {
+            @apply overflow-x-auto pb-2;
+        }
+        
+        .mobile-grid {
+            @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/PromptForm.js"></script>
+    <script type="text/babel" src="components/PromptDisplay.js"></script>
+    <script type="text/babel" src="components/FeatureCard.js"></script>
+    <script type="text/babel" src="components/FavoritesPanel.js"></script>
+    <script type="text/babel" src="components/TemplateGallery.js"></script>
+    <script type="text/babel" src="components/PreviewGenerator.js"></script>
+    <script type="text/babel" src="components/SettingsPanel.js"></script>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/ExportPanel.js"></script>
+    <script type="text/babel" src="components/HistoryPanel.js"></script>
+    <script type="text/babel" src="components/CommunityGallery.js"></script>
+    <script type="text/babel" src="components/Veo3Generator.js"></script>
+    <script type="text/babel" src="components/RatingSystem.js"></script>
+    <script type="text/babel" src="components/TemplatePresets.js"></script>
+    <script type="text/babel" src="components/ImagePromptGenerator.js"></script>
+    <script type="text/babel" src="components/SceneBuilder.js"></script>
+    <script type="text/babel" src="components/AudioEffects.js"></script>
+    <script type="text/babel" src="components/PromptOptimizer.js"></script>
+    <script type="text/babel" src="components/AdvancedPromptOptimizer.js"></script>
+    <script type="text/babel" src="components/OptimizationHistoryItem.js"></script>
+    <script type="text/babel" src="components/PromptAnalyzer.js"></script>
+    <script type="text/babel" src="components/PromptEnhancer.js"></script>
+    <script type="text/babel" src="components/StyleTransfer.js"></script>
+    <script type="text/babel" src="components/PromptLibrary.js"></script>
+    <script type="text/babel" src="components/TeamWorkspace.js"></script>
+    <script type="text/babel" src="components/AIAnalytics.js"></script>
+    <script type="text/babel" src="components/Marketplace.js"></script>
+    <script type="text/babel" src="components/VideoPreview.js"></script>
+    <script type="text/babel" src="components/BatchGenerator.js"></script>
+    <script type="text/babel" src="components/ImageToVideoPrompt.js"></script>
+    <script type="text/babel" src="components/ApiStatusBar.js"></script>
+    <script type="text/babel" src="components/ApiWarningModal.js"></script>
+    <script type="text/babel" src="utils/promptGenerator.js"></script>
+    <script type="text/babel" src="utils/batchManager.js"></script>
+    <script type="text/babel" src="utils/apiManager.js"></script>
+    <script type="text/babel" src="utils/favoriteManager.js"></script>
+    <script type="text/babel" src="utils/exportManager.js"></script>
+    <script type="text/babel" src="utils/historyManager.js"></script>
+    <script type="text/babel" src="utils/ratingManager.js"></script>
+    <script type="text/babel" src="utils/templateManager.js"></script>
+    <script type="text/babel" src="utils/optimizationManager.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
